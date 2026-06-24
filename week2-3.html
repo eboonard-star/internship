@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 2-3 | Cloud-Based Quantum Infrastructure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=Noto+Sans+Thai:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans Thai', sans-serif; background-color: #fafafa; color: #1f2937; }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-500 selection:text-white">
+
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center bg-white border-b border-gray-100">
+        <a href="index.html#timeline" class="text-sm font-bold text-gray-500 hover:text-blue-600 transition-colors">← BACK TO DASHBOARD</a>
+        <span class="text-xs font-bold tracking-widest text-gray-400 uppercase">NT INTERNSHIP CASE STUDY // อิงชิตะ บุญอาจ</span>
+    </nav>
+
+    <header class="max-w-5xl mx-auto px-6 pt-16 pb-12">
+        <span class="text-blue-600 font-bold tracking-wider text-sm uppercase block mb-2">PHASE II // WEEK 2 - 3</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-gray-900">
+            Cloud-Based Quantum Infrastructure
+        </h1>
+        <p class="text-lg text-gray-500 font-light max-w-3xl">
+            ตั้งค่าและจัดการโครงสร้างพื้นฐานบน AWS Cloud เพื่อเปิดใช้งานสภาพแวดล้อมสำหรับรันวงจรควอนตัมจำลอง
+        </p>
+    </header>
+
+    <section class="max-w-5xl mx-auto px-6 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 bg-white border border-gray-200/80 rounded-2xl overflow-hidden shadow-sm">
+            <div class="p-8 border-b md:border-b-0 md:border-r border-gray-100">
+                <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-2">Core Objective</p>
+                <p class="text-gray-700 font-medium text-sm">ติดตั้งและเช่าใช้งานสภาพแวดล้อม (Cloud Workspace) เพื่อทดสอบรันโค้ดและอัลกอริทึมควอนตัม</p>
+            </div>
+            <div class="p-8 border-b md:border-b-0 md:border-r border-gray-100">
+                <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-2">Technology Stack</p>
+                <p class="text-gray-700 font-medium text-sm">AWS Braket / IAM Roles / Jupyter Notebook / AWS CLI</p>
+            </div>
+            <div class="p-8">
+                <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-2">Key Outcome</p>
+                <p class="text-gray-900 font-bold text-lg">ระบบ Cloud Environment ที่เชื่อมต่อ API และพร้อมรันคำสั่งควอนตัม</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 py-12 border-t border-gray-100">
+        <h2 class="text-2xl font-bold mb-8 tracking-tight">Deployment Pipeline</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="relative pl-6 border-l-2 border-gray-200 hover:border-blue-600 transition-colors py-2 group">
+                <div class="absolute -left-[7px] top-3 w-3 h-3 bg-white border-2 border-gray-300 group-hover:border-blue-600 rounded-full transition-colors"></div>
+                <h3 class="font-bold text-lg mb-2">1. Cloud Initialization</h3>
+                <p class="text-sm text-gray-500 leading-relaxed font-light">จัดการสิทธิ์ผู้ใช้งาน (IAM Execution Roles) และสร้าง Jupyter Notebook Instance บนบริการ Amazon Braket (โซน us-east-1)</p>
+            </div>
+            <div class="relative pl-6 border-l-2 border-gray-200 hover:border-blue-600 transition-colors py-2 group">
+                <div class="absolute -left-[7px] top-3 w-3 h-3 bg-white border-2 border-gray-300 group-hover:border-blue-600 rounded-full transition-colors"></div>
+                <h3 class="font-bold text-lg mb-2">2. Environment Setup</h3>
+                <p class="text-sm text-gray-500 leading-relaxed font-light">เปิด Terminal ตั้งค่า <code>aws configure</code> ด้วย Access Keys และดึงโค้ดตัวอย่างผ่าน Git Clone เพื่อเตรียมแพ็กเกจที่จำเป็น</p>
+            </div>
+            <div class="relative pl-6 border-l-2 border-gray-200 hover:border-blue-600 transition-colors py-2 group">
+                <div class="absolute -left-[7px] top-3 w-3 h-3 bg-white border-2 border-gray-300 group-hover:border-blue-600 rounded-full transition-colors"></div>
+                <h3 class="font-bold text-lg mb-2">3. Quantum Execution</h3>
+                <p class="text-sm text-gray-500 leading-relaxed font-light">ทดสอบรันวงจรควอนตัมเบื้องต้นผ่าน Qiskit / Braket SDK และตรวจสอบสถานะการทำงานผ่านหน้าต่าง Quantum Tasks</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 py-12 mb-20">
+        <h2 class="text-2xl font-bold mb-6 tracking-tight">Project Artifacts</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div>
+                <div class="bg-gray-100 aspect-video rounded-2xl overflow-hidden shadow-inner border border-gray-200">
+                    <img src="assets/aws-pic1.png" alt="AWS Console Setup" class="w-full h-full object-cover">
+                </div>
+                <p class="text-xs text-gray-400 mt-3 text-center">Figure 2.1: การตั้งค่า Instance และ IAM Role บนหน้าคอนโซล AWS</p>
+            </div>
+
+            <div>
+                <div class="bg-gray-100 aspect-video rounded-2xl overflow-hidden shadow-inner border border-gray-200">
+                    <img src="assets/aws-pic2.png" alt="Terminal Execution" class="w-full h-full object-cover">
+                </div>
+                <p class="text-xs text-gray-400 mt-3 text-center">Figure 2.2: หน้าต่าง Jupyter Notebook / Terminal ขณะรันคำสั่งควอนตัม</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="w-full border-t border-gray-200 bg-white py-8 px-6 text-center text-xs text-gray-400">
+        <p>สาขาวิชาเทคโนโลยีคอมพิวเตอร์ ภาควิชาคอมพิวเตอร์ศึกษา มจพ.</p>
+    </footer>
+
+</body>
+</html>

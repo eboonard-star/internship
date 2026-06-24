@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 8 | Logic Control Systems</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700;800&family=Noto+Sans+Thai:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', 'Noto Sans Thai', sans-serif; background-color: #fafafa; color: #1f2937; }
+    </style>
+</head>
+<body class="antialiased selection:bg-blue-500 selection:text-white">
+
+    <nav class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center bg-white border-b border-gray-100">
+        <a href="index.html#timeline" class="text-sm font-bold text-gray-500 hover:text-blue-600 transition-colors">← BACK TO DASHBOARD</a>
+        <span class="text-xs font-bold tracking-widest text-gray-400 uppercase">NT INTERNSHIP // LOGIC CONTROL</span>
+    </nav>
+
+    <header class="max-w-5xl mx-auto px-6 pt-16 pb-12">
+        <span class="text-blue-600 font-bold tracking-wider text-sm uppercase block mb-2">PHASE IV // WEEK 8</span>
+        <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight mb-4 text-gray-900">
+            Logic Control & Address Decoder
+        </h1>
+        <p class="text-lg text-gray-500 font-light max-w-3xl">
+            เจาะลึกสถาปัตยกรรมบอร์ดควบคุม Quintech AEC-5-043-03 และกลไกการถอดรหัสสัญญาณสำหรับระบบ RF Matrix Switch
+        </p>
+    </header>
+
+    <section class="max-w-5xl mx-auto px-6 mb-16">
+        <div class="grid grid-cols-1 md:grid-cols-3 bg-white border border-gray-200/80 rounded-2xl overflow-hidden shadow-sm">
+            <div class="p-8 border-b md:border-b-0 md:border-r border-gray-100">
+                <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-2">Core Objective</p>
+                <p class="text-gray-700 font-medium text-sm">วิเคราะห์การทำงานของระบบ Logic Control Card เพื่อทำความเข้าใจการประมวลผลสัญญาณควบคุมในระดับ Hardware</p>
+            </div>
+            <div class="p-8 border-b md:border-b-0 md:border-r border-gray-100">
+                <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-2">Key Components</p>
+                <p class="text-gray-700 font-medium text-sm">Interface (Input/DIP Switch), Brain (Decoders), Muscle (Latch & RF Switch)</p>
+            </div>
+            <div class="p-8">
+                <p class="text-[10px] font-bold text-blue-600 uppercase tracking-widest mb-2">Outcome</p>
+                <p class="text-gray-900 font-bold text-lg">เข้าใจกลไก Address Decoding เพื่อป้องกันสัญญาณรบกวนและข้อผิดพลาดในระบบ</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-5xl mx-auto px-6 py-12 mb-20">
+        <h2 class="text-2xl font-bold mb-6 tracking-tight">Project Artifacts</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            
+            <div>
+                <div class="bg-gray-100 aspect-video rounded-2xl overflow-hidden shadow-inner border border-gray-200">
+                    <img src="assets/logic-pic1.jpg" class="w-full h-full object-cover" alt="Logic Architecture">
+                </div>
+                <p class="text-xs text-gray-400 mt-3 text-center">Figure 4.1: โครงสร้างกายวิภาคบอร์ดควบคุม (Interface, Brain, Muscle)</p>
+            </div>
+
+            <div>
+                <div class="bg-gray-100 aspect-video rounded-2xl overflow-hidden shadow-inner border border-gray-200">
+                    <img src="assets/logic-pic2.jpg" class="w-full h-full object-cover" alt="Address Setup">
+                </div>
+                <p class="text-xs text-gray-400 mt-3 text-center">Figure 4.2: การตั้งค่า Address ด้วย DIP Switch (Binary Mapping)</p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="w-full border-t border-gray-200 bg-white py-8 px-6 text-center text-xs text-gray-400">
+        <p>รายงานการฝึกปฏิบัติงานสหกิจศึกษา — มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าพระนครเหนือ</p>
+    </footer>
+
+</body>
+</html>
